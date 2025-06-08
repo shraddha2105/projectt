@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Skills Test | Novaspire</title>
+  <link rel="stylesheet" href="technical.css">
+</head>
+<body>
+  <!-- Navbar -->
+ <header>
+        <nav class="navbar">
+            <div class="nav-title">Novaspire</div>
+            <ul class="nav-links">
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Resume Builder</a></li>
+                <li><a href="#">My Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- Personality Quiz Section -->
+  <section class="quiz-section">
+    <h1>Discover Your Personality Traits</h1>
+    <h3>Please rate your Skills in the given following 10 technical Yes/No questions to get a career suggestion</h3>
+    <form class="quiz-form">
+      <ol>
+        <li>Do you enjoy trying new experiences or activities, even if they seem challenging?</li>
+        <label><input type="radio" name="q1" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q1" value="no"> No</label>
+        <br><br>
+        <li> Do you prefer working alone rather than in a team?</li>
+        <label><input type="radio" name="q2" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q2" value="no"> No</label>
+         <br><br>
+        <li>Do you find it easy to understand how others are feeling?</li>
+        <label><input type="radio" name="q3" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q3" value="no"> No</label>
+         <br><br>
+        <li> Do you often plan your day in advance and stick to the schedule?</li>
+        <label><input type="radio" name="q4" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q4" value="no"> No</label>
+         <br><br>
+        <li>Do you remain calm even in stressful situations?</li>
+        <label><input type="radio" name="q5" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q5" value="no"> No</label>
+         <br><br>
+        <li>Do you feel motivated to take the lead in group situations?</li>
+        <label><input type="radio" name="q6" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q6" value="no"> No</label>
+         <br><br>
+        <li> Do you find it difficult to forgive someone who has wronged you?</li>
+        <label><input type="radio" name="q7" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q7" value="no"> No</label>
+         <br><br>
+        <li>Do you enjoy being the center of attention in social gatherings?</li>
+        <label><input type="radio" name="q8" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q8" value="no"> No</label>
+         <br><br>
+        <li>Do you often reflect on your emotions or question your decisions?</li>
+        <label><input type="radio" name="q9" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q9" value="no"> No</label>
+         <br><br>
+        <li>Do you adapt quickly when your plans suddenly change?</li>
+        <label><input type="radio" name="q10" value="yes"> Yes</label><br><br>
+        <label><input type="radio" name="q10" value="no"> No</label>
+      </ol>
+       <div class="button-group">
+        <button type="button" onclick="handlesubmit()">Submit</button>
+        <button type="button" onclick="goToNextTest()">Next Test</button>
+        <p id="successsMsg"></p>
+       </div>
+    </form>
+  </section>
+</body>
+</html>

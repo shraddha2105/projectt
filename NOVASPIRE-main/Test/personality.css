@@ -1,0 +1,104 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+  .navbar {
+    background-color: #85529c;  
+    color: rgb(0, 0, 0);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff; /* Red accent for title */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding-right:50px;
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin-left: 30px;
+    font-weight: 600;
+    
+}
+
+.nav-links a {
+    font-size:larger ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c; /* Red accent on hover */
+}
+    .quiz-section {
+      padding: 20px 40px;
+      background-color: #f5f7fa;
+    }
+
+    .quiz-form ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+
+    .quiz-form li {
+      margin-bottom: 15px;
+    }
+
+    .quiz-form label {
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+  .button-group {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.button-group button {
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:first-child {
+  background-color: #2f2fa2;
+  color: white;
+}
+
+.button-group button:last-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+#successMsg {
+  color: green;
+  font-weight: bold;
+  display: none;
+  margin-top: 1rem;
+}

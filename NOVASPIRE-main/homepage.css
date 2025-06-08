@@ -1,0 +1,300 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255); /* Light greyish background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #85529c;  
+    color: rgb(0, 0, 0);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff; /* Red accent for title */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding-right:50px;
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin-left: 30px;
+    font-weight: 600;
+    
+}
+
+.nav-links a {
+    font-size:larger ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c; /* Red accent on hover */
+    
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: linear-gradient( rgb(187, 170, 194), #85529c); /* Blue gradient */
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.appear-text {
+  opacity: 0;
+  transform: translateY(90px);
+  animation: fadeInUp 1s ease forwards; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+/* Cards Section */
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #85529c; /* Blue for card titles */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Cards Section */
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.info1{
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 30px;
+
+}
+.info{
+    background-color:white;
+    padding: 70px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 1.37em;
+    text-align: left;
+    
+}
+.info h1{
+    color: rgb(133, 82, 156);
+}
+.img{
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-image: url(./aptitudeimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-image: url(./techimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3{
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-image: url(./Who\ am\ I_.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style:circle;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+hr {
+  margin: 30px auto;
+  border: 0;
+  border-top: 1px solid #333;
+  width: 90%;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 20px;
+}
+/* Responsive Design (Optional, but good practice) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+}

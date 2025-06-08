@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#87CEFA , #1E90FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20PX;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+span {
+    color: #1E90FF;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+.social-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+
+.social-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 18   0px;
+    margin-bottom: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #e0e0e0;
+}
+
+.social-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-button.google {
+    background-color: #db4a39;
+    color: #fff;
+    border-color: #db4a39;
+}
+
+.social-button.google:hover {
+    background-color: #c23321;
+}
+
+.social-button.apple {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.social-button.apple:hover {
+    background-color: #333;
+}
+
+.or-separator {
+    margin: 10px ;
+    color: #aaa;
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 9px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    margin-top: 25px;
+    color: #666;
+    font-size: 15px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
